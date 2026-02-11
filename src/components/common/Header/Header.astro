@@ -1,0 +1,26 @@
+---
+import Link from "@/components/Link.astro";
+import { ROUTES } from "@/lib/shared.ts";
+---
+
+<nav class="relative bg-background dark:bg-black">
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+      <div>
+        <span>Marco De Freitas</span>
+      </div>
+      <div
+        class="flex items-center justify-end sm:items-stretch sm:justify-start"
+      >
+        <div class="hidden sm:ml-6 sm:block">
+          <div class="flex space-x-4">
+            <Link href={ROUTES.BIOGRAPHY} label="Biografía" />
+            <Link href={ROUTES.PROJECTS} label="Proyectos" />
+            <Link href={ROUTES.BLOG} label="Blog" />
+            <Link href={ROUTES.CONTACT} label="Contacto" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,32 @@
+---
+import "../../styles/global.css";
+import Header from "../common/Header/Header.astro";
+import { ThemeToggle } from "../ThemeToggle";
+const { title } = Astro.props;
+
+interface Props {
+  title: string;
+}
+
+const props = Astro.props as Props;
+---
+
+<html lang="es" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{props.title}</title>
+    <script>
+      localStorage.theme === "dark"
+        ? document.documentElement.classList.add("dark")
+        : document.documentElement.classList.remove("dark");
+    </script>
+  </head>
+  <body class={`h-screen min-h-scren font-display antialiased relative dark:bg-black`}>
+    <Header />
+    <slot />
+    <div class="absolute bottom-3 right-3 bg-white/10 dark:bg-black/10">
+      <ThemeToggle client:load />
+    </div>
+  </body>
+</html>
