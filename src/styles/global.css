@@ -3,5 +3,45 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-display: Inter, sans-serif;
+  /* LIGHT */
+  /* BACKGROUND */
+  --color-light: hsl(210 40% 98%);
+  --color-muted-light: hsl(210 40% 96%);
+  --color-subtle-light: hsl(210 30% 94%);
+
+  /* TEXT */
+  --color-primary-light: hsl(222 47% 11%);
+  --color-secondary-light: hsl(215 25% 27%);
+  --color-terciary-light: hsl(215 20% 45%);
+
+  /* BORDER */
+  --color-border-light: hsl(214 32% 91%);
+  --color-border-strong-light: hsl(214 25% 85%);
+
+  /* ACCENT */
+  --color-accent-light: hsl(222 89% 55%);
+  --color-accent-hover-light: hsl(222 89% 48%);
+  --color-accent-soft-light: hsl(222 89% 95%);
+  --color-accent-alt-light: hsl(190 85% 45%);
+
+  /* DARK */
+  /* BACKGROUND */
+  --color-dark: hsl(222 47% 7%);
+  --color-muted-dark: hsl(215 28% 12%);
+  --color-subtle-dark: hsl(215 25% 15%);
+
+  /* TEXT */
+  --color-primary-dark: hsl(210 40% 98%);
+  --color-secondary-dark: hsl(210 30% 85%);
+  --color-terciary-dark: hsl(215 20% 65%);
+
+  /* BORDER */
+  --color-border-dark: hsl(215 25% 18%);
+  --color-border-strong-dark: hsl(215 25% 25%);
+
+  /* ACCENT */
+  --color-accent-dark: hsl(222 89% 60%);
+  --color-accent-hover-dark: hsl(222 89% 68%);
+  --color-accent-soft-dark: hsl(222 89% 20%);
+  --color-accent-alt-dark: hsl(190 85% 55%);
 }
